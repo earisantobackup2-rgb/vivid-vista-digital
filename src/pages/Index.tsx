@@ -1,13 +1,46 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Helmet } from 'react-helmet-async';
+import Navbar from '@/components/Navbar';
+import HeroSection from '@/components/HeroSection';
+import AboutSection from '@/components/AboutSection';
+import ServicesSection from '@/components/ServicesSection';
+import ProductsSection from '@/components/ProductsSection';
+import CTASection from '@/components/CTASection';
+import ChannelsSection from '@/components/ChannelsSection';
+import ClientsSection from '@/components/ClientsSection';
+import TestimonialsSection from '@/components/TestimonialsSection';
+import ContactSection from '@/components/ContactSection';
+import Footer from '@/components/Footer';
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <>
+      <Helmet>
+        <title>PT Intinusa Dinamika Optima - Your One Stop IT Solutions</title>
+        <meta
+          name="description"
+          content="PT Intinusa Dinamika Optima adalah perusahaan IT di Cilacap yang menyediakan solusi Server, Storage, Computing, Printing, Network Enterprise & Retail Solutions."
+        />
+        <meta
+          name="keywords"
+          content="IT Solutions, Server, Storage, Network, Printing, Service Center, Cilacap, Jawa Tengah"
+        />
+        <link rel="canonical" href="https://intinusa.co.id" />
+      </Helmet>
+
+      <main className="overflow-x-hidden">
+        <Navbar />
+        <HeroSection />
+        <AboutSection />
+        <ServicesSection />
+        <ProductsSection />
+        <CTASection />
+        <ChannelsSection />
+        <ClientsSection />
+        <TestimonialsSection />
+        <ContactSection />
+        <Footer />
+      </main>
+    </>
   );
 };
 
