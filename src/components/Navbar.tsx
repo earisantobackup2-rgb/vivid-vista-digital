@@ -34,17 +34,18 @@ const Navbar = () => {
     >
       <div className="container-custom flex items-center justify-between px-4 md:px-8">
         {/* Logo */}
-        <a href="#hero" className="flex items-center gap-3 group">
+        <a href="#hero" className="flex items-center gap-2 md:gap-3 group flex-1 min-w-0">
           <img
             src={logoWhite}
             alt="PT Intinusa Dinamika Optima"
-            className="h-10 md:h-12 transition-transform duration-300 group-hover:scale-105"
+            className="h-8 md:h-12 flex-shrink-0 transition-transform duration-300 group-hover:scale-105"
           />
-          <div className="hidden sm:block">
-            <p className="font-heading font-bold text-sm md:text-base text-primary-foreground transition-colors duration-300">
-              PT Intinusa Dinamika Optima
+          <div className="min-w-0">
+            <p className="font-heading font-bold text-xs sm:text-sm md:text-base text-primary-foreground transition-colors duration-300 truncate">
+              <span className="sm:hidden">INTINUSA</span>
+              <span className="hidden sm:inline">PT Intinusa Dinamika Optima</span>
             </p>
-            <p className="text-xs text-primary-foreground/70 transition-colors duration-300">
+            <p className="text-[10px] sm:text-xs text-primary-foreground/70 transition-colors duration-300 hidden xs:block">
               IT Solutions
             </p>
           </div>
