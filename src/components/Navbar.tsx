@@ -42,7 +42,7 @@ const Navbar = () => {
           />
           <div className="min-w-0">
             <p className="font-heading font-bold text-xs sm:text-sm md:text-base text-primary-foreground transition-colors duration-300 truncate">
-              <span className="sm:hidden">INTINUSA</span>
+              <span className="sm:hidden">INTINUSA.CO.ID</span>
               <span className="hidden sm:inline">PT Intinusa Dinamika Optima</span>
             </p>
             <p className="text-[10px] sm:text-xs text-primary-foreground/70 transition-colors duration-300 hidden xs:block">
